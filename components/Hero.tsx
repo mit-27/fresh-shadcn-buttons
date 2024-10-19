@@ -4,11 +4,12 @@ import { cn } from "../lib/utils.ts";
 import { buttonVariants } from "./Button.tsx";
 import { Button } from "./Button.tsx";
 import Title from "./Title.tsx";
+import { RxGithubLogo } from "@preact-icons/rx";
 
 const canvasStyle = /*css*/ `.particles-js-canvas-el {
 	position: absolute;
 	inset: 0;
-	z-index: -10;
+	z-index: 0;
 	animation: fade-in-opacity 1s linear forwards;
 	opacity: 0;
 	transition: opacity 1s linear;
@@ -35,18 +36,18 @@ const Hero = () => {
                             class="pointer-events-auto font-semibold text-jsr-gray-900 text-2xl text-balance leading-[1.1] sm:text-5xl md:text-5xl lg:text-5xl opsize-normal md:opsize-sm text-center -mt-5 md:-mt-6 max-w-[10em]"
                             style="text-shadow: 0 0 2em white, 0 0 1em white, 0 0 0.5em white, 0 0 0.25em white, 0 0 3em white, 0 0 0.5em white;"
                         >
-                            {"Shadcn buttons for "}{" "}
+                            {"Shadcn buttons for Deno's"}{" "}
                             <b className="text-[#FFD80D]">{"Fresh"}</b>
                             {" and "}{" "}
                             <b className="text-[#673AB9]">{"Preact"}</b>
                         </div>
                         <p className="relative z-10 text-balance text-center max-w-[40em] text-md sm:text-xl md:text-xl lg:text-xl">
-                            {"Guide to import and use all shadcn buttons in your Fresh project. It is also compatible with any Preact based fronted framework."}
+                            {"Use all shadcn buttons in your Deno's Fresh project. It is also compatible with any Preact based framework."}
                         </p>
                     </h1>
                 </div>
             </div>
-            <div className="max-w-full flex items-center justify-center mt-6 gap-6">
+            <div className="max-w-full flex relative z-10 items-center justify-center mt-6 gap-6">
                 <a
                     href="/docs"
                     className={cn(
@@ -62,12 +63,14 @@ const Hero = () => {
                     href="/docs"
                     className={cn(
                         buttonVariants({
-                            variant: "shine",
+                            variant: "outline",
                             size: "lg",
                         }),
+                        "flex items-center justify-center gap-2",
                     )}
                 >
-                    {"Star on Github"}
+                    <RxGithubLogo />
+                    <span>Star on Github</span>
                 </a>
             </div>
         </div>

@@ -4,6 +4,10 @@
 
 import * as $_404 from "./routes/_404.tsx";
 import * as $_app from "./routes/_app.tsx";
+import * as $docs_layout from "./routes/docs/_layout.tsx";
+import * as $docs_buttons from "./routes/docs/buttons.tsx";
+import * as $docs_index from "./routes/docs/index.tsx";
+import * as $docs_setup from "./routes/docs/setup.tsx";
 import * as $index from "./routes/index.tsx";
 import * as $HeroParticles from "./islands/HeroParticles.tsx";
 import type { Manifest } from "$fresh/server.ts";
@@ -12,6 +16,10 @@ const manifest = {
   routes: {
     "./routes/_404.tsx": $_404,
     "./routes/_app.tsx": $_app,
+    "./routes/docs/_layout.tsx": $docs_layout,
+    "./routes/docs/buttons.tsx": $docs_buttons,
+    "./routes/docs/index.tsx": $docs_index,
+    "./routes/docs/setup.tsx": $docs_setup,
     "./routes/index.tsx": $index,
   },
   islands: {
