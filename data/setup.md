@@ -26,3 +26,10 @@ fresh new my-project
 
 This will create a new directory called `my-project` with a fresh project
 inside.
+
+```javascript
+function greet(name) {
+    console.log(`Hello, ${name}!`);
+}
+greet("World");
+```

@@ -3,6 +3,7 @@ import type { Handlers, PageProps } from "$fresh/server.ts";
 import { asset, Head } from "$fresh/runtime.ts";
 import { useEffect, useRef } from "preact/hooks";
 import CodeBlock from "../../islands/copy-code-block.tsx";
+import { renderMarkdown } from "../../utils/markdown.ts";
 
 interface SetupPageProps {
     markdown: string;
@@ -24,12 +25,15 @@ const DocsSetup = ({ data }: PageProps<SetupPageProps | null>) => {
             <Head>
                 <style dangerouslySetInnerHTML={{ __html: CSS }} />
                 {/* <CodeBlock /> */}
-                <script src={asset("/scripts/copy-code-block.js")} defer />
+                {/* <script src={asset("/scripts/copy-code-block.js")} defer /> */}
             </Head>
+            <CodeBlock />
             <div className="p-5">
                 <div
                     class="markdown-body"
-                    dangerouslySetInnerHTML={{ __html: render(data?.markdown) }}
+                    dangerouslySetInnerHTML={{
+                        __html: renderMarkdown(data?.markdown).html,
+                    }}
                 />
             </div>
         </div>
