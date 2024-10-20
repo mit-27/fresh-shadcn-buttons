@@ -109,6 +109,10 @@ body {
     }
 }
 
+/* .tab-content {
+    @apply bg-white rounded-md flex items-center justify-center;
+} */
+
 @layer base {
     * {
         @apply border-border;

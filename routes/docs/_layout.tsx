@@ -11,21 +11,28 @@ const DocsLayout = ({ Component }: PageProps) => {
             <Header />
             <div className="flex min-h-screen">
                 <nav className="hidden pt-5 flex-shrink-0 lg:block ml-2 font-semibold border-r border-jsr-gray-200 lg:border-jsr-gray-300 w-[14rem]">
-                    <div className="relative flex w-full">
-                        <div className="flex flex-col gap-3 fix w-full pr-2">
+                    <div className="fixed flex w-[14rem]">
+                        <div className="flex flex-col gap-3 w-[14rem] pr-2">
                             <a
                                 href="/docs/setup"
                                 // className="aria-[current]:text-green-600"
-                                class="aria-[current]:text-[#263E64] aria-[current]:border-[#263E64] aria-[current]:bg-[#DEEDED] border-l-4 border-transparent px-4 py-0.5 transition-colors hover:text-[#263E64] font-normal"
+                                class="aria-[current]:text-[#263E64] rounded-r-md aria-[current]:border-[#263E64] aria-[current]:bg-[#DEEDED] border-l-4 border-transparent px-4 py-0.5 transition-colors hover:text-[#263E64] font-normal"
                             >
                                 Setup
                             </a>
                             <a
-                                href="/docs/buttons"
+                                href="/docs/examples"
                                 // className="aria-[current]:text-green-600"
-                                class="aria-[current]:text-[#263E64] aria-[current]:border-[#263E64] aria-[current]:bg-[#DEEDED] border-l-4 border-transparent px-4 py-0.5 transition-colors hover:text-[#263E64] font-normal"
+                                class="aria-[current]:text-[#263E64] rounded-r-md aria-[current]:border-[#263E64] aria-[current]:bg-[#DEEDED] border-l-4 border-transparent px-4 py-0.5 transition-colors hover:text-[#263E64] font-normal"
                             >
                                 Buttons
+                            </a>
+                            <a
+                                href="/docs/config"
+                                // className="aria-[current]:text-green-600"
+                                class="aria-[current]:text-[#263E64] rounded-r-md aria-[current]:border-[#263E64] aria-[current]:bg-[#DEEDED] border-l-4 border-transparent px-4 py-0.5 transition-colors hover:text-[#263E64] font-normal"
+                            >
+                                Config
                             </a>
                         </div>
                     </div>

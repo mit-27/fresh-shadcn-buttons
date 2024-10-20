@@ -5,11 +5,13 @@
 import * as $_404 from "./routes/_404.tsx";
 import * as $_app from "./routes/_app.tsx";
 import * as $docs_layout from "./routes/docs/_layout.tsx";
-import * as $docs_buttons from "./routes/docs/buttons.tsx";
+import * as $docs_config from "./routes/docs/config.tsx";
+import * as $docs_examples from "./routes/docs/examples.tsx";
 import * as $docs_index from "./routes/docs/index.tsx";
 import * as $docs_setup from "./routes/docs/setup.tsx";
 import * as $index from "./routes/index.tsx";
 import * as $HeroParticles from "./islands/HeroParticles.tsx";
+import * as $copy_code_block from "./islands/copy-code-block.tsx";
 import type { Manifest } from "$fresh/server.ts";
 
 const manifest = {
@@ -17,13 +19,15 @@ const manifest = {
     "./routes/_404.tsx": $_404,
     "./routes/_app.tsx": $_app,
     "./routes/docs/_layout.tsx": $docs_layout,
-    "./routes/docs/buttons.tsx": $docs_buttons,
+    "./routes/docs/config.tsx": $docs_config,
+    "./routes/docs/examples.tsx": $docs_examples,
     "./routes/docs/index.tsx": $docs_index,
     "./routes/docs/setup.tsx": $docs_setup,
     "./routes/index.tsx": $index,
   },
   islands: {
     "./islands/HeroParticles.tsx": $HeroParticles,
+    "./islands/copy-code-block.tsx": $copy_code_block,
   },
   baseUrl: import.meta.url,
 } satisfies Manifest;
