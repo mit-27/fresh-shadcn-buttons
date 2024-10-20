@@ -24,8 +24,8 @@ const DocsSetup = ({ data }: PageProps<SetupPageProps | null>) => {
             <Head>
                 <style dangerouslySetInnerHTML={{ __html: CSS }} />
                 {/* <CodeBlock /> */}
-                <script src={asset("/scripts/copy-code-block.js")} defer />
             </Head>
+            <CodeBlock />
             <div className="p-5">
                 <div
                     class="markdown-body"

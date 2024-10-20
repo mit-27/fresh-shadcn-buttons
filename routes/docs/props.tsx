@@ -1,7 +1,6 @@
 import { CSS, render } from "@deno/gfm";
 import type { Handlers, PageProps } from "$fresh/server.ts";
 import { asset, Head } from "$fresh/runtime.ts";
-import { useEffect } from "preact/hooks";
 
 interface SetupPageProps {
     markdown: string;
@@ -10,12 +9,12 @@ interface SetupPageProps {
 
 export const handler: Handlers<SetupPageProps> = {
     async GET(_req, ctx) {
-        const rawMarkeddown = await Deno.readTextFile("./data/setup.md");
+        const rawMarkeddown = await Deno.readTextFile("./data/props.md");
         return ctx.render({ markdown: rawMarkeddown, data: {} });
     },
 };
 
-const DocsSetup = ({ data }: PageProps<SetupPageProps | null>) => {
+const PropsSetup = ({ data }: PageProps<SetupPageProps | null>) => {
     if (!data) return null;
 
     return (
@@ -35,4 +34,4 @@ const DocsSetup = ({ data }: PageProps<SetupPageProps | null>) => {
     );
 };
 
-export default DocsSetup;
+export default PropsSetup;
