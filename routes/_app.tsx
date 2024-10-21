@@ -2,7 +2,7 @@ import { type PageProps } from "$fresh/server.ts";
 import { asset } from "$fresh/runtime.ts";
 export default function App({ Component }: PageProps) {
   return (
-    <html>
+    <html lang="en">
       <head>
         <link
           rel="preload"
