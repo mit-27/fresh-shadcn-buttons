@@ -1,5 +1,5 @@
 // import { Slot, Slottable } from "@radix-ui/react-slot";
-import { ComponentChildren, h, isValidElement, JSX } from "preact";
+import { ComponentChildren, isValidElement, JSX } from "preact";
 import { cloneElement, forwardRef } from "preact/compat";
 import { cva, type VariantProps } from "class-variance-authority";
 import { cn } from "../lib/utils.ts";

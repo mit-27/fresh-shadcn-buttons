@@ -7,7 +7,11 @@ const Header = () => {
             f-client-nav={false}
         >
             <a href="/" className="font-semibold text-jsr-gray-900 text-2xl">
-                Shadcn Fresh Buttons
+                Shadcn{" "}
+                <span className="font-semibold text-2xl text-[#FFD80D]">
+                    Fresh
+                </span>{" "}
+                Buttons
             </a>
             <a
                 href="https://github.com/mit-27/fresh-shadcn-buttons"
