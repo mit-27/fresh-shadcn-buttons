@@ -1,5 +1,5 @@
 User-Agent: *
 Allow: /
-Disallow: []
+Disallow: 
 
 Sitemap: https://fresh-shadcn-buttons.deno.dev/sitemap.xml
