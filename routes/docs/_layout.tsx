@@ -14,11 +14,11 @@ const DocsLayout = ({ Component }: PageProps) => {
                     <div className="fixed flex w-[14rem]">
                         <div className="flex flex-col gap-3 w-[14rem] pr-2">
                             <a
-                                href="/docs/setup"
+                                href="/docs/installation"
                                 // className="aria-[current]:text-green-600"
                                 class="aria-[current]:text-[#263E64] rounded-r-md aria-[current]:border-[#263E64] aria-[current]:bg-[#DEEDED] border-l-4 border-transparent px-4 py-0.5 transition-colors hover:text-[#263E64] font-normal"
                             >
-                                Setup
+                                Installation
                             </a>
                             <a
                                 href="/docs/examples"

@@ -16,7 +16,10 @@ export default function App({ Component }: PageProps) {
           content={"Shadcn buttons for Deno's Fresh."}
         />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content={""} />
+        <meta
+          property="og:url"
+          content={"https://fresh-shadcn-buttons.deno.dev/"}
+        />
         <title>fresh-shadcn-buttons</title>
         <link
           rel="preload"
@@ -25,7 +28,7 @@ export default function App({ Component }: PageProps) {
           type="font/woff2"
           crossorigin="true"
         />
-        <link rel="stylesheet" href="/styles.css" />
+        <link rel="stylesheet" href={asset("/styles.css")} />
       </head>
       <body>
         <Component />

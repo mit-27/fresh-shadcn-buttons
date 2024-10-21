@@ -2,8 +2,6 @@ import { asset, Head } from "$fresh/runtime.ts";
 import { HeroParticles } from "../islands/HeroParticles.tsx";
 import { cn } from "../lib/utils.ts";
 import { buttonVariants } from "./Button.tsx";
-import { Button } from "./Button.tsx";
-import Title from "./Title.tsx";
 import { RxGithubLogo } from "@preact-icons/rx";
 
 const canvasStyle = /*css*/ `.particles-js-canvas-el {
@@ -60,7 +58,9 @@ const Hero = () => {
                     {"Explore the docs"}
                 </a>
                 <a
-                    href="/docs"
+                    href="https://github.com/mit-27/fresh-shadcn-buttons"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className={cn(
                         buttonVariants({
                             variant: "outline",
