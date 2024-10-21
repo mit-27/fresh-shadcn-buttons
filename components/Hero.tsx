@@ -31,7 +31,7 @@ const Hero = () => {
                 <div class="text-center">
                     <h1 class="relative z-10 flex flex-col items-center gap-6 lg:gap-8">
                         <div
-                            class="pointer-events-auto font-semibold text-jsr-gray-900 text-2xl text-balance leading-[1.1] sm:text-5xl md:text-5xl lg:text-5xl opsize-normal md:opsize-sm text-center -mt-5 md:-mt-6 max-w-[10em]"
+                            class="pointer-events-auto font-semibold text-jsr-gray-900 text-2xl text-balance leading-[1.1] sm:text-5xl md:text-5xl lg:text-5xl opsize-normal md:opsize-sm text-center -mt-5 md:-mt-6 md:max-w-[10em] sm:w-full"
                             style="text-shadow: 0 0 2em white, 0 0 1em white, 0 0 0.5em white, 0 0 0.25em white, 0 0 3em white, 0 0 0.5em white;"
                         >
                             {"Shadcn buttons for Deno's"}{" "}
@@ -45,7 +45,7 @@ const Hero = () => {
                     </h1>
                 </div>
             </div>
-            <div className="max-w-full flex relative z-10 items-center justify-center mt-6 gap-6">
+            <div className="max-w-full flex relative z-10 flex-col sm:flex-row items-center justify-center mt-6 gap-6">
                 <a
                     href="/docs"
                     className={cn(

@@ -25,7 +25,7 @@ const DocsLayout = ({ Component }: PageProps) => {
                                 // className="aria-[current]:text-green-600"
                                 class="aria-[current]:text-[#263E64] rounded-r-md aria-[current]:border-[#263E64] aria-[current]:bg-[#DEEDED] border-l-4 border-transparent px-4 py-0.5 transition-colors hover:text-[#263E64] font-normal"
                             >
-                                Buttons
+                                Examples
                             </a>
                             <a
                                 href="/docs/props"
