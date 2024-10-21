@@ -35,7 +35,7 @@ export default function App({ Component }: PageProps) {
         <meta property="og:type" content="website" />
         <meta
           property="og:image"
-          content={"https://fresh-shadcn-buttons.deno.dev/og-image.png"}
+          content={asset("/og-image.webp")}
         />
 
         <meta name="twitter:card" content="summary_large_image" />
@@ -50,7 +50,7 @@ export default function App({ Component }: PageProps) {
 
         <meta
           name="twitter:image"
-          content={"https://fresh-shadcn-buttons.deno.dev/og-image.webp"}
+          content={asset("/og-image.webp")}
         />
 
         <meta name="author" content={"Mit Suthar"} />
