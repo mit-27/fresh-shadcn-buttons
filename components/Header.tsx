@@ -7,11 +7,10 @@ const Header = () => {
             f-client-nav={false}
         >
             <a href="/" className="font-semibold text-jsr-gray-900 text-2xl">
-                Shadcn{" "}
                 <span className="font-semibold text-2xl text-[#FFD80D]">
                     Fresh
                 </span>{" "}
-                Buttons
+                Shadcn Buttons
             </a>
             <div className="flex items-center gap-3 flex-wrap">
                 <div
