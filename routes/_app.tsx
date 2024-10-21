@@ -4,6 +4,14 @@ export default function App({ Component }: PageProps) {
   return (
     <html>
       <head>
+        <link
+          rel="preload"
+          href={asset("/fonts/FixelVariable.woff2")}
+          as="font"
+          type="font/woff2"
+          crossorigin="true"
+        />
+        <link rel="stylesheet" href={asset("/styles.css")} />
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta
@@ -48,14 +56,6 @@ export default function App({ Component }: PageProps) {
         <meta name="author" content={"Mit Suthar"} />
 
         <title>Fresh Shadcn Buttons</title>
-        <link
-          rel="preload"
-          href={asset("/fonts/FixelVariable.woff2")}
-          as="font"
-          type="font/woff2"
-          crossorigin="true"
-        />
-        <link rel="stylesheet" href={asset("/styles.css")} />
       </head>
       <body>
         <Component />
