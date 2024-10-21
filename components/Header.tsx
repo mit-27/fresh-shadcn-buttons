@@ -4,7 +4,7 @@ const Header = () => {
     return (
         <div
             className="flex p-4 md:gap-3 items-center flex-wrap justify-between sticky top-0 bg-white/75 z-50 backdrop-blur-sm border-b "
-            f-client-nav={true}
+            f-client-nav={false}
         >
             <a href="/" className="font-semibold text-jsr-gray-900 text-2xl">
                 Shadcn{" "}
@@ -14,7 +14,10 @@ const Header = () => {
                 Buttons
             </a>
             <div className="flex items-center gap-3 flex-wrap">
-                <div className="flex items-center gap-2 lg:hidden flex-wrap">
+                <div
+                    className="flex items-center gap-2 lg:hidden flex-wrap"
+                    f-client-nav={true}
+                >
                     <a
                         href="/docs/installation"
                         // className="aria-[current]:text-green-600"
