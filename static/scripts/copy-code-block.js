@@ -18,14 +18,8 @@ function copyCodeBlock() {
             });
         });
 
-        // Create a wrapper for positioning
-        const wrapper = document.createElement("div");
-        wrapper.style.cssText =
-            "position: relative; display: inline-block; width: 100%;";
-
-        codeBlock.parentElement?.insertBefore(wrapper, codeBlock);
-        wrapper.appendChild(codeBlock);
-        wrapper.appendChild(button);
+        codeBlock.style.cssText = "position: relative;;width: 100%;";
+        codeBlock.appendChild(button);
     });
 }
 
